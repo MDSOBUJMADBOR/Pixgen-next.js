@@ -11,7 +11,7 @@ const Navbar = () => {
           <Image
             src={logo}
             alt="logo"
-            loading="eager"
+            loading="eager"  
             width={30}
             height={30}
             className="object-cover h-auto w-auto"
@@ -21,7 +21,7 @@ const Navbar = () => {
 
         <ul className="flex items-center gap-5 text-sm">
           <li>
-            <Link href={"/"}>Home</Link>
+            <Link href={"/"}> Home </Link>
           </li>
           <li>
             <Link href={"/all-photos"}>All Photos</Link>
