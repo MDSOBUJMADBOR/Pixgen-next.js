@@ -1,8 +1,19 @@
+import { authClient } from '@/lib/auth-client';
 import { Button, Input, Label, Modal, Surface, TextField } from '@heroui/react';
 import React from 'react';
 import { BiEdit, BiUser } from 'react-icons/bi';
 
-const Updatauser = () => {
+ const UpdateUserModal = () => {
+const onSubmit = async (e) => {
+e.preventDefault();
+const name = e.target.name.value;
+const image = e.target.image.value;
+await authClient.updateUser({
+   name,
+   image       
+})
+};
+
           return (
   <Modal>
       <Button variant="secondary">
@@ -46,4 +57,4 @@ const Updatauser = () => {
           );
 };
 
-export default Updatauser;
+export default UpdateUserModal;

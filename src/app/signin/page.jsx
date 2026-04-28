@@ -15,6 +15,14 @@ password,
 callbackURL: "/",
 })
 console.log(data,error);
+if(data){
+alert("Your Profile Login Successful")
+}
+if(error){
+    alert(error.message)  
+
+}
+
 }
 
   return (
