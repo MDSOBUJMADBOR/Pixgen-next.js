@@ -8,9 +8,9 @@ export async function proxy(request) {
  headers: await headers(), 
  }) 
  if(!session){
-return NextResponse.redirect(new URL('/signin', request.url))
+return NextResponse.redirect(new URL('/signin', request.url)) 
  }        
-}
+}  
 
  
 export const config = {
