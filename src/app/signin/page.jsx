@@ -2,13 +2,15 @@
 import { authClient } from '@/lib/auth-client';
 import { Button, Description, FieldError, Input, Label, TextField,Card } from '@heroui/react';
 import { Check } from 'lucide-react';
-
+// import {Button} from "@heroui/react";
+import {Icon} from "@iconify/react";
 
 const SignInPage = () => {
 const onSubmit = async (e) => {
 e.preventDefault();
 const email = e.target.email.value;
 const password = e.target.password.value;
+
 const {data,error} = await authClient.signIn.email({
 email,
 password,
@@ -16,13 +18,18 @@ callbackURL: "/",
 })
 console.log(data,error);
 if(data){
-alert("Your Profile Login Successful")
+alert("Your Profile Login Successful");
 }
 if(error){
-    alert(error.message)  
+    alert(error.message);  
 
 }
+}
 
+const handleGoogleSignIn = async () => {
+  await authClient.signIn.social({
+    provider: 'google'
+  })
 }
 
   return (
@@ -83,6 +90,13 @@ if(error){
         </div>
 
       </form>
+
+<p className='text-center'>Or</p>
+
+<Button onClick={handleGoogleSignIn} className="w-96 mx-auto " variant="tertiary">
+        <Icon icon="devicon:google" />
+        Sign in with Google
+      </Button>
     </Card>
   );
 };
