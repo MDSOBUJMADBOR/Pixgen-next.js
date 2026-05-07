@@ -1,36 +1,80 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🎨 Pixgen
 
-## Getting Started
+Create production-ready AI visuals in seconds. Built for speed, scale, and creativity.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Live Preview
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+> Add your live site link here
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📌 Features
 
-## Learn More
+- 🔐 Authentication (Sign Up / Sign In)
+- 🖼️ AI Image Generation from text prompts
+- 🌐 Public Gallery (All Photos)
+- ❤️ Like & engagement system
+- 👤 User Profile
+- 📱 Responsive UI
+- ⚡ Fast performance
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🧭 Pages Overview
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 🏠 Home
+- Hero section with CTA
+- Top AI generated images
 
-## Deploy on Vercel
+### 🖼️ All Photos
+- Browse all generated images
+- Categories:
+  - Realistic
+  - Fantasy
+  - Sci-Fi
+  - Cyberpunk
+  - Minimal
+  - Pixel Art
+  - Surreal
+  - Vaporwave
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 💰 Pricing
+- Pricing plans (customizable)
+
+---
+
+### 👤 Profile
+- User info
+- Generated images history
+
+---
+
+## 🔐 Authentication
+
+### Sign Up
+- Name
+- Image URL
+- Email
+- Password (min 8 chars, 1 uppercase, 1 number)
+
+### Sign In
+- Email
+- Password
+
+---
+
+## 🧱 Tech Stack
+
+- React / Next.js  
+- Tailwind CSS  
+- Framer Motion  
+- Node.js / Express  
+- MongoDB  
+
+---
+
+## 📂 Folder Structure
