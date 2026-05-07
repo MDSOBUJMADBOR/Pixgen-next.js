@@ -6,7 +6,7 @@ Create production-ready AI visuals in seconds. Built for speed, scale, and creat
 
 ## 🚀 Live Preview
 
-> Add your live site link here
+> Live Link : https://pixgen-next-js.vercel.app
 
 ---
 
